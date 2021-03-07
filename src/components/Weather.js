@@ -14,7 +14,7 @@ const Weather = () => {
     if (evt.key === "Enter") {
      // Fetching the data into the json
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=c952342796f0cdae6ec4e2619fb1317f`
+        `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=c952342796f0cdae6ec4e2619fb1317f`
       )
         .then((res) => res.json())
         .then((result) => {
